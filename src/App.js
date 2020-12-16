@@ -9,7 +9,7 @@ function App() {
 			<Image
 				src={Airfinity}
 				position='absolute'
-				width='70%'
+				width='60%'
 				bottom='10px'
 				alt=''
 			/>
