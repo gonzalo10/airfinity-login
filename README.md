@@ -4,6 +4,13 @@
 
 React applicaiton created using `create-react-app`
 
+## ❤️ Live Version: [Airfinity Login](airfinity-login.vercel.app)
+
+## 🔓 Login Credentials
+
+> Username: airfinity
+> Password: test
+
 ## 💻 Tech stack
 
 - [Reactjs](https://reactjs.org/)
