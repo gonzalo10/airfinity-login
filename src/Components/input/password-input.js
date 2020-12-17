@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import {
 	Button,
 	FormControl,
@@ -10,11 +11,16 @@ import {
 	Flex
 } from '@chakra-ui/react'
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons'
-import { useState } from 'react'
+
 import { PASSWORD } from '../../constants'
 
 const PasswordInput = ({ password, handlePassword, hasError }) => {
 	const [showPassword, setShowPassword] = useState(false)
+
+	const handleShowPassword = () => {
+		setShowPassword((show) => !show)
+	}
+
 	return (
 		<FormControl isInvalid={hasError}>
 			<Flex justify='space-between' width='100%'>
@@ -35,10 +41,7 @@ const PasswordInput = ({ password, handlePassword, hasError }) => {
 					isRequired
 				/>
 				<InputRightElement width='3rem'>
-					<Button
-						h='1.5rem'
-						size='sm'
-						onClick={() => setShowPassword((show) => !show)}>
+					<Button h='1.5rem' size='sm' onClick={handleShowPassword}>
 						{showPassword ? <ViewOffIcon /> : <ViewIcon />}
 					</Button>
 				</InputRightElement>

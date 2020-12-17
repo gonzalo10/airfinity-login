@@ -1,7 +1,7 @@
 import { Box, Icon } from '@chakra-ui/react'
 
-import LogoSvg from '../assets/Logo'
-import getStyle from '../helpers/shake-animation'
+import LogoSvg from '../../assets/Logo'
+import getStyle from '../../helpers/shake-animation'
 
 const LoginCard = ({ children, hasError }) => {
 	return (

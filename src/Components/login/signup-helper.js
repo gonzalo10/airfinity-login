@@ -1,6 +1,6 @@
 import { Flex, Text, Link } from '@chakra-ui/react'
 
-const LoginFooter = () => {
+const SignupHelper = () => {
 	return (
 		<Flex textAlign='left' width='100%' my={2}>
 			<Text fontSize='ml' color='white'>
@@ -10,4 +10,4 @@ const LoginFooter = () => {
 	)
 }
 
-export default LoginFooter
+export default SignupHelper

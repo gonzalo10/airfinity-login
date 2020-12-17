@@ -6,7 +6,7 @@ export const userLogin = async ({ username, password }) => {
 			if (username === CORRECT_USERNAME && password === CORRECT_PASSWORD) {
 				resolve()
 			} else {
-				reject()
+				reject(new Error('Incorrect email or password.'))
 			}
 		}, 2000)
 	})

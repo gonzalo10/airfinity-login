@@ -1,6 +1,6 @@
 import { Image } from '@chakra-ui/react'
 
-import Login from './login'
+import Login from './pages/login'
 import Airfinity from './assets/electrocardiogram.png'
 
 function App() {
