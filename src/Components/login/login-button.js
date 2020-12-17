@@ -3,7 +3,7 @@ import { Button } from '@chakra-ui/react'
 const LoginButton = ({ isLoading }) => {
 	return (
 		<Button
-			data-qa='login-button'
+			data-testid='login-button'
 			width='100%'
 			type='submit'
 			isLoading={isLoading}

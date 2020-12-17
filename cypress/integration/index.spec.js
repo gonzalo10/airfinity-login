@@ -2,11 +2,11 @@ const vistiUrl = () => {
 	cy.visit('http://localhost:3000')
 }
 
-const getUsernameInput = () => cy.dataQa('username-input')
-const getPasswordInput = () => cy.dataQa('password-input')
-const getLoginButton = () => cy.dataQa('login-button')
-const getLoginErrorInput = () => cy.dataQa('login-error-message')
-const getSuccessLoginState = () => cy.dataQa('success-login-state')
+const getUsernameInput = () => cy.dataId('username-input')
+const getPasswordInput = () => cy.dataId('password-input')
+const getLoginButton = () => cy.dataId('login-button')
+const getLoginErrorInput = () => cy.dataId('login-error-message')
+const getSuccessLoginState = () => cy.dataId('success-login-state')
 
 const fillForm = (username, password) => {
 	getUsernameInput().type(username)

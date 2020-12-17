@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react'
 import { Container, VStack, Text } from '@chakra-ui/react'
+import PropTypes from 'prop-types'
 
-import UsernameInput from '../input/username-input'
-import PasswordInput from '../input/password-input'
-import LoginButton from './login-button'
-import SuccessState from '../success-state'
+import UsernameInput from '../../input/username-input'
+import PasswordInput from '../../input/password-input'
+import LoginButton from '../login-button'
+import SuccessState from '../../success-state'
 
-import useValidateUser from '../../hooks/use-validate-user'
-import { USERNAME, PASSWORD } from '../../constants'
+import { useValidateUser } from '../../../hooks/use-validate-user'
+import { USERNAME, PASSWORD } from '../../../constants'
 
 const Form = ({ setShowErrorAnimation }) => {
 	const [username, setUsername] = useState('')
@@ -66,6 +67,10 @@ const Form = ({ setShowErrorAnimation }) => {
 			</form>
 		</Container>
 	)
+}
+
+Form.propTypes = {
+	setShowErrorAnimation: PropTypes.func.isRequired
 }
 
 export default Form

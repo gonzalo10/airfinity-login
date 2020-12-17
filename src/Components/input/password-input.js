@@ -31,7 +31,7 @@ const PasswordInput = ({ password, handlePassword, hasError }) => {
 			</Flex>
 			<InputGroup>
 				<Input
-					data-qa='password-input'
+					data-testid='password-input'
 					type={showPassword ? 'text' : PASSWORD}
 					autoComplete='current-password'
 					id={PASSWORD}
@@ -47,7 +47,7 @@ const PasswordInput = ({ password, handlePassword, hasError }) => {
 				</InputRightElement>
 			</InputGroup>
 
-			<FormErrorMessage fontWeight='500' data-qa='login-error-message'>
+			<FormErrorMessage fontWeight='500' data-testid='login-error-message'>
 				⚠️ Incorrect email or password.
 			</FormErrorMessage>
 		</FormControl>

@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 import { userLogin } from '../helpers/mock-api'
 
-const useValidateUser = ({ username, password }) => {
+export const useValidateUser = ({ username, password }) => {
 	const [isLoading, setIsLoading] = useState(false)
 	const [hasError, setHasError] = useState(false)
 	const [userValidated, setUserValidated] = useState(false)
@@ -33,5 +33,3 @@ const useValidateUser = ({ username, password }) => {
 
 	return [{ isLoading, hasError, userValidated, data }, validateUser]
 }
-
-export default useValidateUser

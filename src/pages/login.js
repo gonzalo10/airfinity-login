@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Container, Flex } from '@chakra-ui/react'
 
-import Form from '../Components/login/form'
+import Form from '../Components/login/form/form'
 import LoginCard from '../Components/login/card'
 import SignupHelper from '../Components/login/signup-helper'
 

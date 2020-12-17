@@ -7,7 +7,7 @@ const SuccessState = () => {
 			width='100%'
 			mb={4}
 			direction='column'
-			data-qa='success-login-state'>
+			data-testid='success-login-state'>
 			<Text fontSize='xl'> Welcome to Airfinity</Text>
 			<Text fontSize='l'> Life Science’s new intelligence</Text>
 		</Flex>

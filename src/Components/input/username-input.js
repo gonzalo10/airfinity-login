@@ -6,7 +6,7 @@ const UsernameInput = ({ username, handleUsername, hasError }) => {
 		<FormControl isInvalid={hasError}>
 			<FormLabel htmlFor={USERNAME}>Username</FormLabel>
 			<Input
-				data-qa='username-input'
+				data-testid='username-input'
 				autoComplete={USERNAME}
 				value={username}
 				id={USERNAME}
