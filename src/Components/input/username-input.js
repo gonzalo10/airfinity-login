@@ -1,4 +1,6 @@
 import { FormControl, FormLabel, Input } from '@chakra-ui/react'
+import PropTypes from 'prop-types'
+
 import { USERNAME } from '../../constants'
 
 const UsernameInput = ({ username, handleUsername, hasError }) => {
@@ -16,6 +18,12 @@ const UsernameInput = ({ username, handleUsername, hasError }) => {
 			/>
 		</FormControl>
 	)
+}
+
+UsernameInput.propTypes = {
+	username: PropTypes.string.isRequired,
+	handleUsername: PropTypes.func.isRequired,
+	hasError: PropTypes.bool.isRequired
 }
 
 export default UsernameInput

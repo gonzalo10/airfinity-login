@@ -11,6 +11,7 @@ import {
 	Flex
 } from '@chakra-ui/react'
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons'
+import PropTypes from 'prop-types'
 
 import { PASSWORD } from '../../constants'
 
@@ -52,6 +53,12 @@ const PasswordInput = ({ password, handlePassword, hasError }) => {
 			</FormErrorMessage>
 		</FormControl>
 	)
+}
+
+PasswordInput.propTypes = {
+	password: PropTypes.string.isRequired,
+	handlePassword: PropTypes.func.isRequired,
+	hasError: PropTypes.bool.isRequired
 }
 
 export default PasswordInput
